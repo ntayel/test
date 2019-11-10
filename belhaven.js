@@ -3,7 +3,8 @@ $(document).ready(function () {
         var accountName = $('a[aria-label="My Account"]').text();
         var campusTXT = $(".elcn-application-link").text();
         var name=GetCampusName(campusTXT);
-        if(currentURL.indexOf("ThankYou")< 0) ReplaceURL(name);        
+        var currentURL1=window.location.href ;
+        if(currentURL1.indexOf("ThankYou")< 0) ReplaceURL(name);        
     }  
 
     function GetCampusName(campusTXT){
